@@ -1,0 +1,6 @@
+#ifndef _INTERNAL_VERSION_H_
+#define _INTERNAL_VERSION_H_
+
+#define VERSION_STR "0.6.0"
+
+#endif	// _INTERNAL_VERSION_H_

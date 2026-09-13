@@ -1,0 +1,14 @@
+.cache
+compile_commands.json
+
+config.mak
+
+*.o
+libgnm*
+/testgnm
+/gcn-dis
+/gnf-conv
+/gnf-info
+/gnf-mk
+/pm4-dis
+/pssl-dis
