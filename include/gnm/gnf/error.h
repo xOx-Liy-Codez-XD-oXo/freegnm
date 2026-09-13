@@ -1,0 +1,16 @@
+#ifndef _GNM_GNF_ERROR_H_
+#define _GNM_GNF_ERROR_H_
+
+typedef enum {
+	GNF_ERR_OK = 0,
+	GNF_ERR_INVALID_ARG,
+	GNF_ERR_OVERFLOW,
+	GNF_ERR_BAD_HEADER_MAGIC,
+	GNF_ERR_BAD_USERDATA_MAGIC,
+	GNF_ERR_UNSUPPORTED,
+	GNF_ERR_INTERNAL_ERROR,
+} GnfError;
+
+const char* gnfStrError(GnfError err);
+
+#endif	// _GNM_GNF_ERROR_H_

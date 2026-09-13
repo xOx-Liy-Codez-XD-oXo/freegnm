@@ -1,0 +1,16 @@
+.{
+    .name = .freegnm,
+    .version = "0.1.0",
+    .fingerprint = 0xeb2f730ee70769cc,
+    .minimum_zig_version = "0.17.0-dev.1387+01b60634c",
+    .dependencies = .{},
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "cmd",
+        "include",
+        "src",
+        "LICENSE",
+        "README.md",
+    },
+}
