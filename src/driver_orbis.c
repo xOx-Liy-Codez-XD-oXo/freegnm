@@ -31,10 +31,13 @@ int32_t gnmDriverDrawIndexIndirect(
     uint8_t vertexoffusgpr, uint8_t instanceoffusgpr, SceGnmDrawFlags flags
 ) {
 	OrbisGnmDrawFlags castflags = *(OrbisGnmDrawFlags*)&flags;
-	return sceGnmDrawIndexIndirect(
+	/* are the orbis header wrongs, did they change, or what? 
+	i hope this doesnt break anything, but it fixes compile.. -lily*/
+	sceGnmDrawIndexIndirect(
 	    cmd, numdwords, dataoffset, stage, vertexoffusgpr, instanceoffusgpr,
 	    castflags
 	);
+	return 0;
 }
 
 int32_t gnmDriverDrawIndirect(
@@ -79,7 +82,9 @@ int32_t gnmDriverInsertWaitFlipDone(
     uint32_t* cmd, uint32_t numdwords, int32_t videohandle,
     uint32_t displaybufidx
 ) {
-	return sceGnmInsertWaitFlipDone(
+	/* i changed this too -lily*/
+	sceGnmInsertWaitFlipDone(
 	    cmd, numdwords, videohandle, displaybufidx
 	);
+	return 0;
 }
