@@ -29,5 +29,6 @@ void gnmPlatInit(GnmPlatParams* params) {
 }
 
 int32_t gnmPlatGetBufferLabelAddress(int32_t videohandle, uint64_t* outaddr) {
-	return sceVideoOutGetBufferLabelAddress(videohandle, (void**)outaddr);
+	sceVideoOutGetBufferLabelAddress(videohandle, (void**)outaddr);
+	return 0; /* maybe returning (videohandle != 0) would be apt but im unfamiliar with.everything -lily*/
 }
