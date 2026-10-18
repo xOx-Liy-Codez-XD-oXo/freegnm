@@ -1,3 +1,5 @@
+## Lily fork .. i fixed various things to get c branch to compile .. look there
+
 # freegnm
 
 freegnm is an ***in development*** library for accessing hardware accelerated graphics and compute on the PlayStation 4, and a set of tools for manipulating resources related to it.
